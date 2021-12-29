@@ -257,6 +257,13 @@ a {
 @media screen and (max-width: 1000px) {
   .all .dics_secsion .row {
     display: block;
+    position: static;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .all .dics_secsion .row {
+    margin: 50px 0;
   }
 }
 
@@ -267,9 +274,9 @@ a {
 
 @media screen and (max-width: 1000px) {
   .all .dics_secsion .row .innners {
-    width: 90vw;
-    min-height: 58vw;
+    width: 100%;
     text-align: center;
+    position: static;
   }
 }
 
@@ -284,8 +291,10 @@ a {
 
 @media screen and (max-width: 1000px) {
   .all .dics_secsion .row .innners .text_div {
-    position: relative;
-    margin: 100px 20px;
+    position: static;
+    margin: 50px 20px;
+    transform: none;
+    -webkit-transform: none;
   }
 }
 
@@ -302,7 +311,7 @@ a {
 
 @media screen and (max-width: 450px) {
   .all .dics_secsion .row .innners .text_div .title {
-    margin-top: 200px;
+    margin-top: 50px;
   }
 }
 
@@ -323,7 +332,16 @@ a {
   width: 100%;
 }
 
+@media screen and (max-width: 450px) {
+  .all .dics_secsion .row .innners img {
+    width: 90vw;
+  }
+}
+
 @media screen and (max-width: 1000px) {
+  .all .dics_secsion .row .innners img.first {
+    margin-right: 10vw;
+  }
   .all .dics_secsion .row .innners img.second {
     margin-left: 10vw;
   }
