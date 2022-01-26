@@ -100,24 +100,32 @@ a {
                 width: 200px;
                 background: rgb(42, 246, 234);
                 background: linear-gradient(137deg, rgba(42, 246, 234, 1) 0%, rgba(42, 173, 246, 1) 100%);
+                filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.2));
+                transition: all .2s;
+                cursor: pointer;
+                &:hover {
+                    filter: none;
+                }
+                border-radius: 7px;
                 padding: 2px;
                 @include mq(sm) {
                     margin: auto;
                 }
                 .join_button_inner {
-                    background: #fff;
+                    background: rgba(255, 255, 255, 0.3);
+                    border-radius: 6px;
                     justify-content: center;
                     align-items: center;
                     display: flex;
                     padding: 5px 20px;
                     img {
-                        width: 15px;
                         height: 20px;
-                        margin-right: 20px;
+                        margin-right: 15px;
                     }
                     p {
                         font-size: 14px;
                         line-height: 14px;
+                        color: #fff;
                     }
                 }
             }
@@ -162,6 +170,9 @@ a {
                 -webkit-text-stroke: 1.2px #333;
                 text-stroke: 1.2px #333;
                 font-size: calc(4.375rem + ((1vw - 4.3px) * 0.6623));
+                .text {
+                    display: inline-block;
+                }
             }
             .join_button {
                 margin: auto;
@@ -174,6 +185,9 @@ a {
                 filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.2));
                 transition: all .2s;
                 cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 &:hover {
                     filter: none;
                 }
@@ -181,6 +195,10 @@ a {
                     color: white;
                     font-size: 20px;
                     margin: 0;
+                }
+                .apple_logo_button {
+                    height: 24px;
+                    margin-right: 20px;
                 }
             }
             .contact {
