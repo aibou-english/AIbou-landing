@@ -415,12 +415,23 @@ a {
     .copyright_secsion {
         width: 100vw;
         text-align: center;
+        margin-bottom: 30px;
         p {
             font-size: 16px;
             color: #adadad;
             font-weight: 300;
             @include mq(sm) {
                 font-size: 12px;
+            }
+            margin-bottom: 5px;
+        }
+        .hyperlinks {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+                margin: 10px;
+                text-decoration: underline;
             }
         }
     }

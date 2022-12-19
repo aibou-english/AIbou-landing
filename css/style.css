@@ -548,17 +548,36 @@ a {
 .all .copyright_secsion {
   width: 100vw;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .all .copyright_secsion p {
   font-size: 16px;
   color: #adadad;
   font-weight: 300;
+  margin-bottom: 5px;
 }
 
 @media screen and (max-width: 450px) {
   .all .copyright_secsion p {
     font-size: 12px;
   }
+}
+
+.all .copyright_secsion .hyperlinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.all .copyright_secsion .hyperlinks p {
+  margin: 10px;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
